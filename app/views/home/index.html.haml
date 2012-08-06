@@ -28,18 +28,22 @@
       #automate.step.slide{"data-x" => "-1000", "data-y" => "-1500"}
         %q
           Test Automation
-          %b
           %br/
           %br/
-          Jasdeep Madan
+          %b Jasdeep Madan
           <br>
           %b ThoughtWorks
+          <input type=button id=moveNext />
       .step.slide{"data-x" => "0", "data-y" => "-1500"}
         %q
           %strong Test Automation you ask?
       .step.slide{"data-x" => "1000", "data-y" => "-1500"}
-        %q
-          %small Testing is organized skepticism. It’s the belief that things may not be as they seem; that things could be different.
+        %small
+          %p
+          %br/
+          %br/
+          Testing is organized skepticism. It’s the belief that things may not be as they seem; that things could be different.
+          %br/
           %br/
           It is a support function that helps developers look good by finding their mistakes before anyone else does.
       #title.step{"data-scale" => "4", "data-x" => "0", "data-y" => "0"}
@@ -49,13 +53,17 @@
           %sup *
           Using WebDriver(Selenium 2)
       #its.step{"data-rotate" => "90", "data-scale" => "5", "data-x" => "850", "data-y" => "3000"}
-        %p
-          Getting Started
+        %h1
+          %p
+            Getting Started
           %br/
-          %strong Download Webdriver
+          %strong Download WebDriver
           %a{:href => "http://code.google.com/p/selenium/downloads/list"} code.google.com
           %br/
           Unzip into a directory and Rename it 'WEBDRIVER'
+          %br/
+          Download TestNg
+          %a{:href => "http://testng.org/doc/download.html"}
       #big.step{"data-rotate" => "180", "data-scale" => "6", "data-x" => "3500", "data-y" => "2100"}
         %p
           visualize what you
@@ -84,8 +92,6 @@
         %p create a project
         %q
           Add all the JAR files in 'WEBDRIVER' to your project CLASSPATH.
-      //#one-more-thing.step{"data-scale" => "2", "data-x" => "6000", "data-y" => "4000"}
-      //  %p one more thing...
       #its-in-3d.step{"data-rotate-x" => "-40", "data-rotate-y" => "10", "data-scale" => "2", "data-x" => "6200", "data-y" => "4300", "data-z" => "-100"}
         %p
           %span.have Write your Test,
@@ -97,10 +103,32 @@
             %b
               FeedBack
               %sup
+      #new.step.slide{"data-x" => "-1000", "data-y" => "5000"}
+        %p
+          %q
+            %b
+              References
+          %br/
+          %b
+            WebDriver:
+          %i
+            http://seleniumhq.org/
+          %br/
+          %b
+            TestNg:
+          %i
+            http://testng.org/doc/index.html
+          %br/
+          %b
+            PageObjects:
+          %i
+            http://code.google.com/p/selenium/wiki/PageObjects
+      -##one-more-thing.step{"data-scale" => "2", "data-x" => "6000", "data-y" => "4000"}
+      -#  %p one more thing...
         //%span.footnote * beat that, prezi ;)
       #overview.step{"data-scale" => "10", "data-x" => "3000", "data-y" => "1500"}
-    .hint
-      %p Use a spacebar or arrow keys to navigate
+    -#.hint
+    -#  %p Use a spacebar or arrow keys to navigate
 
 = javascript_include_tag 'impress'
 :javascript
